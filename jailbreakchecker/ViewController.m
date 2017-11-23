@@ -59,6 +59,7 @@
     UIAlertAction* yes = [UIAlertAction actionWithTitle:@"goodbye"
                                                   style:UIAlertActionStyleDefault
                                                 handler:^(UIAlertAction * action) {
+                                                    exit(-1);
                                                 }];
     [alert addAction:yes];
     [self presentViewController:alert animated:YES completion:nil];
